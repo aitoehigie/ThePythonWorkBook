@@ -6,8 +6,11 @@ def sorted():
     while number != 0:
         numbers.append(number)
         number = int(input("Enter a number:"))
+    numbers.sort()
     return numbers
 
 
 if __name__ == "__main__":
-    print(sorted())
+    for number in sorted():
+        print(number, "\n")
+
